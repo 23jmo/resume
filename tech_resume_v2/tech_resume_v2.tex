@@ -1,0 +1,314 @@
+%-------------------------
+% Resume in Latex
+% Author : Gabriel Sison
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Random Stuff %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[letterpaper,11pt]{article}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-7pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{0pt}]
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Commands  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-3pt}}
+  }
+}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-3pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeSubheadingContinue}[2]{
+  \vspace{-3pt}
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeProjectHeading}[2]{
+  \vspace{-3pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{0pt}}
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{0pt}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Heading  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+    \begin{center}
+        % NAME
+        {\Huge\scshape Johnathan Mo} 
+        % SUBHEADING
+        
+        \small
+        % EMAIL
+        \href{mailto:jym2117@columbia.edu}{\raisebox{-0.2\height}\faEnvelope\  \underline{jym2117@columbia.edu}} ~ 
+        % LINKEDIN
+        //
+    
+        %\faLinkedIn
+        \href{https://www.linkedin.com/in/johnathan-mo/}{\raisebox{-0.2\height}\ \underline{LinkedIn}}  ~
+        % GITHUB
+        //
+        %\faGithub
+        \href{https://github.com/23jmo}
+        {\raisebox{-0.2\height}\ \underline{GitHub}} ~
+        \href{https://23jmo.github.io/Johnathan-Portfolio}
+        % PERSOANL WEBSITE
+        //
+        %\faGithub
+        {\raisebox{-0.2\height}\ \underline{Personal Website}}
+        //
+        NYC
+        //
+        +1(650)996-3432
+        
+    \end{center}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Education  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Education}
+  \resumeSubHeadingListStart
+  
+    % MAIN INFORMATION
+     \resumeSubheading
+    {Columbia University}{New York City, NY}
+    {Bachelors of Engineering in Computer Science}{Expected May 2027}
+        \resumeItemListStart
+            \resumeItem{\textbf{GPA:} 3.9/4.0 |\textbf{Selected Coursework:} Data Structures, Advanced Programming, Databases, Opearting Systems, User Interface Design, Discrete Math, Linear Algebra}
+            \resumeItem{\textbf{Activities:} Columbia Build Lab, CGUI Lab, Application Development Initiative, V1 Tech Entrepreneurship (Head of Marketing), Columbia Space Initiative}
+        \resumeItemListEnd
+
+    % \resumeSubheading
+    % {University of Michigan}{Ann Arbor, MI}
+    % {Bachelors of Engineering in Biomedical Engineering; Minor in Computer Science}{Aug 2023 - May 2024}
+    %     % BULLET POINTS
+    %     \resumeItemListStart
+    %         \resumeItem{\textbf{GPA:} 4.0/4.0 }
+    %         % |\textbf{Selected Coursework:} Data Structures and Programming, BioInspired Design, Discrete Math, Multivariate Calculus}
+    %         % \resumeItem{\textbf{Activities:} Michigan Research and Discovery Scholars, V1 Tech Entrepreneurship (Head of Marketing), Entrepreneurial Leadership Program (was the only freshman in the cohort)}
+    %     \resumeItemListEnd
+
+    % \resumeSubheading
+    % {The Harker School}{San Jose, CA}{High School Diploma}{}
+    %     % BULLET POINTS
+    %     \resumeItemListStart
+    %         \resumeItem{\textbf{Activities:} Medical Club (Co-President), Public Health Club (Co-President), Health Occupational Students of America (VP of Competitions), Varsity Swimming, Jazz Band}
+    %         \resumeItem{\textbf{Awards:} National Merit Finalist, AP Scholar with Distinction, Leadership Certificate, Presidential Volunteer's Service Award Gold (x3) }
+    %     \resumeItemListEnd
+        
+  \resumeSubHeadingListEnd
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Experience  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Experience}
+    \resumeSubHeadingListStart
+
+        % COMPANY 1
+         \resumeSubheading
+        {Google}{Sunnyvale, California}
+            % POSITION 1
+            {Systems Software Engineering Intern}{May 2025 - Present}
+            \resumeItemListStart
+                \resumeItem{}
+                \resumeItem{ } 
+            \resumeItemListEnd
+            
+        \resumeSubheading
+        {Mayah Design}{Hybrid in NYC, New York}
+            % POSITION 1
+            {Software Engineering Intern}{August 2024 - January 2025}
+            \resumeItemListStart
+                \resumeItem{Constructed product visualization features using \textbf{React.js}, \textbf{TailwindCSS}, and \textbf{Node.js} for a novel interior design recommendation web platform, improving visual efficacy by 50\%}
+                \resumeItem{Collaborated with product managers, other developers, and the CEO to deploy code over \textbf{AWS} and \textbf{Docker}. Utilize \textbf{SQL} and \textbf{Spring Boot} to optimize the furniture database, leading to 60\% increase in recommendation accuracy}
+                % \resumeItem{Delivered oral presentation to an audience of over 200. Presented at site-wide poster fair.}
+            \resumeItemListEnd
+            
+        \resumeSubheading
+        {National Institute of Biomedical Imaging and Bioengineering (NIBIB)}{Bethesda, MD}
+            % POSITION 1
+            {Software Engineering Summer Intern, IDEAS Lab}{June 2024 - August 2024}
+            \resumeItemListStart
+                \resumeItem{Developed a medical augmented reality application, integrating \textbf{Unity}, \textbf{C\#}, and \textbf{Photon Fusion} for multi-user interactions. Leveraged \textbf{OpenAI} and \textbf{Microsoft Azure Speech Cognition Services} for intelligent voice commands.}
+                \resumeItem{Delivered presentation to the Scientific Director of the NIBIB and a team of 12 surgeons and residency students to demonstrate the potential for AR to transform surgical workflows.}
+                % \resumeItem{Delivered oral presentation to an audience of over 200. Presented at site-wide poster fair.}
+            \resumeItemListEnd
+
+        % COMPANY 1
+ %        \resumeSubheading
+ %        {University of Michigan Cai Lab}{Ann Arbor, MI}
+ %            % POSITION 1
+ %            {Research Intern}{September 2023 - May 2024}
+ %            \resumeItemListStart
+ %                \resumeItem{
+ % Innovated machine learning algorithm for 3D segmentation of neurons in brain scans leveraging \textbf{Python}, U-Net architecture, and libraries like \textbf{wandb}, \textbf{TensorFlow}, and \textbf{PyTorch}, leading to 50\% reduction in memory usage.}
+ %                \resumeItem{Engineered a 3D flood-filling algorithm using set operations, leading to a 26x reduction in processing time.
+ %                }
+ %            \resumeItemListEnd
+
+        % COMPANY 2
+        \resumeSubheading
+        {Stanford Ophthalmic Informatics and Artificial Intelligence Group}{Palo Alto, CA}
+            % POSITION 1
+            {Research Intern}{May 2023 - September 2023}
+            \resumeItemListStart
+                \resumeItem{Conceptualized and executed research project leveraging \textbf{Google Cloud Platform}, \textbf{HuggingFace} Transformers, \textbf{Numpy}, \textbf{Pandas}, \textbf{PyTorch}, and \textbf{Gradio} to compare effectiveness of traditional Convolutional Neural Networks against Visual Large Language Models on recognizing Glaucoma Images.}
+                \resumeItem{
+                 Harnessed \textbf{Few-Shot Prompting}, and \textbf{Chain-Of-Thought} prompting to improve VLLM performance by 30\%.
+                }
+                % \resumeItem{Harnessed Visual Language Models such as Mini-GPT4 and LLaVA; created gradio interface for easy uploading of glaucoma images; coded on Google Cloud Platform, leading to successful project that was presented to the larger lab group}
+            \resumeItemListEnd
+            
+            % POSITION 2
+            % \resumeSubheadingContinue
+            % {POSITION 2}{DATES}
+            % \resumeItemListStart
+            %     \resumeItem{WHAT YOU DID}
+            %     \resumeItem{WHAT YOU DID}
+            % \resumeItemListEnd
+            
+            % % POSITION 3
+            % \resumeSubheadingContinue
+            % {POSITION 3}{DATES}
+            % \resumeItemListStart
+            %     \resumeItem{WHAT YOU DID}
+            %     \resumeItem{WHAT YOU DID}
+            % \resumeItemListEnd
+
+        % COMPANY 3
+%         \resumeSubheading
+%         {Equal Access Robotics}{Palo Alto, CA}
+%             % POSITION 1
+%             {Founder and CEO}{November 2020 - August 2023}
+%             \resumeItemListStart
+%                 \resumeItem{
+% Created and led a 501c(3) nonprofit organization dedicated to bringing robotics access to students of all backgrounds; taught 500+ students from 10+ different countries.
+% }
+%                 \resumeItem{
+% Demonstrated leadership by managing a team of 40 volunteers, coordinating meetings across multiple timezones; held virtual classes for orphaned students in Bamako, Mali; held an in-person summer camp for 20 students. 
+% }
+%             \resumeItemListEnd
+            
+    \resumeSubHeadingListEnd
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%  PROJECTS  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Personal Projects} 
+    \resumeSubHeadingListStart
+        \resumeProjectHeading
+            {\href{https://trylocked.in/}{\raisebox{-0.2\height}\ \underline{Semantic Search for LinkedIn (Click Here)}}}
+            % Date
+            {}
+            \resumeItemListStart
+                \resumeItem{Created Locked In, a full stack app that uses dynamic \textbf{SQL} generation and \textbf{vector embeddings} to enable 750+ users to search LinkedIn with natural language and automatically generate and send cold emails using the \textbf{Gmail API} and \textbf{LinkedIn API}. The product launch went viral on LinkedIn, X, and YouTube, garnering over 200,000 impressions.}
+            \resumeItemListEnd
+
+        \resumeProjectHeading
+        {\href{https://playtypr.com/}{\raisebox{-0.2\height}\ 
+        \underline{Multiplayer Typeracing Game (Click Here}}}
+        % Date
+        {}
+        \resumeItemListStart
+            \resumeItem{Launched PlayTypr.com, a real-time multiplayer typeracing game built using \textbf{Websockets}, \textbf{Express}, \textbf{Vite.js}, \textbf{Firebase Auth}, and deployed with \textbf{Railway} that had $\approx$ 1000 users at its peak.}
+        \resumeItemListEnd
+
+
+
+        \resumeProjectHeading
+        {\href{http://usermanuai.com}{\raisebox{-0.2\height}\ \underline{Manu.AI}}}
+        % Date
+        {}
+        \resumeItemListStart
+            \resumeItem{Implemented image-based questions using \textbf{OpenAI API}, \textbf{Supabase}, \textbf{FastAPI}, and designed frontend using \textbf{Next.js} to create a B2B \textbf{Full Stack} service turning inconvenient traditional user manuals into interactive digital knowledgebase with chat and image query capabilities. Deployed with \textbf{Docker} and stored files with \textbf{Amazon S3.}}
+        \resumeItemListEnd
+
+        % \resumeProjectHeading
+        % {\href{https://pitch.com/v/professor-parrot-72peq3}{\raisebox{-0.2\height}\ \underline{Professor Parrot}}}
+        % % Date
+        % {}
+        % \resumeItemListStart
+        %     \resumeItem{Designed an AI-powered Advanced Placement (AP) tutoring website using \textbf{Hybrid.js}, \textbf{Redis}, \textbf{Lang-chain}, \textbf{OpenAI}, and deployed with \textbf{Heroku} to simplify and explain AP material to students without access to AP courses.}
+        % \resumeItemListEnd
+        
+        % Project 1
+%         \resumeProjectHeading{\href{https://www.canva.com/design/DAE91Zr9Yp4/ghtS6JCP_accL3v9LbqaZQ/edit}{\raisebox{0.05\height}\ \underline{GANs and CNNs to Detect Skin Conditions}}}
+%         % Date
+%         {}
+%         \resumeItemListStart
+%             \resumeItem{
+% Modified a version of the Pix2Pix Generative Adversarial Network (GAN) architecture and Inception v3 Convolutional Neural Network (CNN) model with \textbf{Python} to more accurately detect skin conditions; awarded 1st award at local science fair, 4th place at the California Science and Engineering Fair (CSEF).
+% }
+        % \resumeItemListEnd
+    
+        % Project 2
+%         \resumeProjectHeading
+%         {More Accurately Diagnosing Skin Conditions on Diverse Skin Types -\href{https://www.canva.com/design/DAEW4-HlgoA/PefUF-fxl0hf6VWU5B-HLA/edit}{\raisebox{-0.2\height}\ \underline{LINK}}}
+%         % Date
+%         {}
+%         \resumeItemListStart
+%             \resumeItem{
+% Designed an ensemble of Convolutional Neural Networks and novel image preprocessing algorithm to normalize lighter and darker skin images; awarded 2nd award at local science fair. 
+% }
+%         \resumeItemListEnd
+        
+    \resumeSubHeadingListEnd
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Technical Skills  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Technical Skills}
+
+    \vspace{-7pt}
+    \begin{itemize}
+    [leftmargin=0.15in, label={}]\small{\item{
+        % LANGUAGES
+        \textbf{Languages}{: C, C++, CSharp, Python, Java, React, HTML/CSS/JavaScript, SQL, TypeScript, Bash, Protobuf} \\
+        % TOOLS
+        \textbf{Tools}{: Cursor, Visual Studio, Unity, VS Code, XCode, Onlook, Figma, Adobe XD, Tmux, Docker, Postman, Vercel, Netlify } \\
+        % TECHNOLOGIES
+        \textbf{Technologies/Frameworks}{: Git, PyTorch, Next.js, OpenAI, Microsoft Azure, MRTK3, Photon, Redis, Heroku, TensorFlow, NumPy, Pandas, Google Cloud Platform, Linux/UNIX, gRPC, LangChain, CI/CD} \\
+        %INTERESTS
+        \textbf{Interests}{: Video Editing, Vlogging, Tech Products, Calisthenics, Hiking, Swimming, Saxophone, Videography, Anime} \\}}
+    \end{itemize}
+\end{document}
